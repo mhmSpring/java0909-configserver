@@ -1,7 +1,7 @@
 
 spring:
   datasource:
-    url: jdbc:mysql://db1:3306/spring03?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/spring03?serverTimezone=UTC
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -11,9 +11,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
+server:
+  port: 8089
 version:  UserPro-mhmwww
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8888/eureka,http://localhost:9999/eureka
